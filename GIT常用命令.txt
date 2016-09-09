@@ -1,7 +1,7 @@
 1.创建版本库
  git init
 
-2.高速git你是谁
+2.告诉git你是谁
   git config --global user.email carsonjay@yeah.net
   git config --global user.name Carson
 
@@ -66,6 +66,27 @@
 17.从远程库克隆
    
    git clone https://github.com/Carson4Jacen/StoreFrame.git
+
+
+18.创建以及切换分支
+   git branch dev //创建名为dev 的分支
+   git checkout dev //切换到 dev 分支
+
+   git checkout -b dev //创建 dev 分支并切换到 dev 分支 相当于上面两条命令
+
+
+19.查看当前分支
+   git branch //该命令将列出所有分支,并在当前分支加上*
+
+20.合并分支
+   git checkout master //切换到 master 分支
+   git merge dev //将 dev 的提交合并到 master
+
+21.删除分支
+   git branch -d dev
+
+   //因为创建、合并和删除分支非常快，所以Git鼓励你使用分支完成某个任务，合并后再删掉分支，这和直接在master分支上工作效果是一样的，但过程更安全
+   
 
 
 
