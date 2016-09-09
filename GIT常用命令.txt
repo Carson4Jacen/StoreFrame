@@ -46,6 +46,22 @@
    git checkout -- test.txt
 
 15.正确删除文件,同步版本库
+   git rm -- test.txt
+
+16.添加远程库 -- github
+   git init
+   git remote add origin https://github.com/Carson4Jacen/StoreFrame.git //建立与远程库的关联
    
+   //添加一个文件
+   git add test.txt
+   git commit -m "add a file test.txt"
+
+   //推送到远程库
+   git push -u origin master
+   
+
+
+
+	
 
   
