@@ -1,0 +1,51 @@
+1.创建版本库
+ git init
+
+2.高速git你是谁
+  git config --global user.email carsonjay@yeah.net
+  git config --global user.name Carson
+
+3.添加文件
+  git add readme.txt
+
+4.提交文件
+  git commit -m "add readme.txt"
+
+5.查看当前工作区的状态
+  git status
+
+6.查看文件内容
+  cat readme.txt
+
+7.比较文件版本不同
+  git diff readme.txt
+
+8.查看提交日志
+  git log
+  git log --pretty=oneline //单行显示
+
+9.版本回退
+  git reset --hard HEAD^ //退回上个版本  ^^会退到前两个版本  ^^^ 三个 类推
+  git reset --hard HEAD~100 //会退到前一百个版本
+  
+  git reset --hard 665224 //回退到指定的commit_id 的版本. 最常用. 通过 git log 获得 commit_id
+
+10.查看我们版本操作的记录-关掉git端之后重新打开也可找回
+  git reflog //可以看到版本号也可以看到 commit 的备注信息
+
+11.将修改添加到暂存区(git add)之后重新放回工作区
+   git reset HEAD readme.txt
+   
+12.撤销修改
+   git checkout -- readme.txt //撤销至最后一次 git add
+
+13.删除文件
+   rm test.txt
+
+14.误删找回--删除了文件但是版本库中还有的情况下
+   git checkout -- test.txt
+
+15.正确删除文件,同步版本库
+   
+
+  
