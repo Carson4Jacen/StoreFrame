@@ -59,6 +59,13 @@
    //推送到远程库
    git push -u origin master
    
+   //第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来
+ 
+   git push origin master
+
+17.从远程库克隆
+   
+   git clone https://github.com/Carson4Jacen/StoreFrame.git
 
 
 
